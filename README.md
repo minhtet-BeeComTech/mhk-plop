@@ -9,11 +9,9 @@
 
 ## Setup for plop code generate
 
-`
 - Create a plopfile.js file in the project root dir.
 - Add the following code to the plopfile.js file.
 
 ```
   module.exports = require('mhk-plop')
 ```
-`
