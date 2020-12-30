@@ -1,6 +1,6 @@
 # mhk-plop
 
-## Getting Start
+## Getting Starts
 
 ```
 npm i mhk-plop  (or)  yarn add mhk-plop
