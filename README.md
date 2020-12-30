@@ -24,4 +24,6 @@
 
 ## Usage
 
-- yarn generate
+```
+yarn generate
+```
