@@ -1,6 +1,6 @@
 {
   "name": "mhk-plop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react cli code generator",
   "main": "index.js",
   "scripts": {

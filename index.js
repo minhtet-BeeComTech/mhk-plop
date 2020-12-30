@@ -53,17 +53,17 @@ const PlopFile = plop => {
         // {
         //   type: 'add',
         //   path: `src/store/actions/typehandle.action.js`,
-        //   templateFile: 'plop-templates/action/typehandle.action.js.hbs',
+        //   templateFile: './plop-templates/action/typehandle.action.js.hbs',
         // },
         {
           type: 'add',
           path: `src/store/actions/{{lowerCase actionFileName}}.action.js`,
-          templateFile: 'plop-templates/action/action.action.js.hbs',
+          templateFile: './plop-templates/action/action.action.js.hbs',
         },
         {
           type: 'add',
           path: 'src/store/actions/index.js',
-          templateFile: 'plop-templates/action/index.js.hbs',
+          templateFile: './plop-templates/action/index.js.hbs',
           skipIfExists: true,
         },
         {
@@ -75,12 +75,12 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/store/reducer/{{lowerCase reducerFileName}}.reducer.js`,
-          templateFile: 'plop-templates/reducer/reducer.reducer.js.hbs',
+          templateFile: './plop-templates/reducer/reducer.reducer.js.hbs',
         },
         {
           type: 'add',
           path: 'src/store/reducer/root.reducer.js',
-          templateFile: 'plop-templates/reducer/root.reducer.js.hbs',
+          templateFile: './plop-templates/reducer/root.reducer.js.hbs',
           skipIfExists: true,
         },
         {
@@ -120,12 +120,12 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/components/{{lowerCase folderName}}/{{pascalCase fileName}}.jsx`,
-          templateFile: 'plop-templates/component/component.jsx.hbs',
+          templateFile: './plop-templates/component/component.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/components/{{lowerCase folderName}}/style.scss',
-          templateFile: 'plop-templates/component/style.scss.hbs',
+          templateFile: './plop-templates/component/style.scss.hbs',
           skipIfExists: true,
         },
         {
@@ -137,7 +137,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/components/{{lowerCase folderName}}/index.jsx',
-          templateFile: 'plop-templates/component/index.jsx.hbs',
+          templateFile: './plop-templates/component/index.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -149,7 +149,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/components/index.jsx',
-          templateFile: 'plop-templates/component/index.jsx.hbs',
+          templateFile: './plop-templates/component/index.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -183,12 +183,12 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/component/{{lowerCase folderName}}/{{pascalCase fileName}}.jsx`,
-          templateFile: 'plop-templates/component/component.jsx.hbs',
+          templateFile: './plop-templates/component/component.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/component/{{lowerCase folderName}}/style.scss',
-          templateFile: 'plop-templates/component/style.scss.hbs',
+          templateFile: './plop-templates/component/style.scss.hbs',
           skipIfExists: true,
         },
         {
@@ -200,7 +200,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/component/{{lowerCase folderName}}/index.jsx',
-          templateFile: 'plop-templates/component/index.jsx.hbs',
+          templateFile: './plop-templates/component/index.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -234,12 +234,12 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/page/{{lowerCase folderName}}/{{pascalCase fileName}}.jsx`,
-          templateFile: 'plop-templates/page/page.jsx.hbs',
+          templateFile: './plop-templates/page/page.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/page/{{lowerCase folderName}}/style.scss',
-          templateFile: 'plop-templates/page/style.scss.hbs',
+          templateFile: './plop-templates/page/style.scss.hbs',
           skipIfExists: true,
         },
         {
@@ -251,7 +251,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/page/{{lowerCase folderName}}/index.jsx',
-          templateFile: 'plop-templates/page/index.jsx.hbs',
+          templateFile: './plop-templates/page/index.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -263,7 +263,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/router/route.jsx',
-          templateFile: 'plop-templates/router/route.jsx.hbs',
+          templateFile: './plop-templates/router/route.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -319,12 +319,12 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/page/{{lowerCase folderName}}/{{pascalCase fileName}}.jsx`,
-          templateFile: 'plop-templates/page/page.jsx.hbs',
+          templateFile: './plop-templates/page/page.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/page/{{lowerCase folderName}}/style.scss',
-          templateFile: 'plop-templates/page/style.scss.hbs',
+          templateFile: './plop-templates/page/style.scss.hbs',
           skipIfExists: true,
         },
         {
@@ -336,7 +336,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/page/{{lowerCase folderName}}/index.jsx',
-          templateFile: 'plop-templates/page/index.jsx.hbs',
+          templateFile: './plop-templates/page/index.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -348,7 +348,7 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: 'src/router/route.jsx',
-          templateFile: 'plop-templates/router/route.jsx.hbs',
+          templateFile: './plop-templates/router/route.jsx.hbs',
           skipIfExists: true,
         },
         {
@@ -388,12 +388,12 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/constant/_{{pascalCase fileName}}.scss`,
-          templateFile: 'plop-templates/styleconstant/_constant.scss.hbs',
+          templateFile: './plop-templates/styleconstant/_constant.scss.hbs',
         },
         {
           type: 'add',
           path: 'src/App.scss',
-          templateFile: 'plop-templates/styleconstant/App.scss.hbs',
+          templateFile: './plop-templates/styleconstant/App.scss.hbs',
           skipIfExists: true,
         },
         {
@@ -421,22 +421,22 @@ const PlopFile = plop => {
         {
           type: 'add',
           path: `src/controller/constant/Config.jsx`,
-          templateFile: 'plop-templates/controller/Config.jsx.hbs',
+          templateFile: './plop-templates/controller/Config.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/controller/constant/HttpClient.jsx',
-          templateFile: 'plop-templates/controller/HttpClient.jsx.hbs',
+          templateFile: './plop-templates/controller/HttpClient.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/controller/constant/Routes.jsx',
-          templateFile: 'plop-templates/controller/Routes.jsx.hbs',
+          templateFile: './plop-templates/controller/Routes.jsx.hbs',
         },
         {
           type: 'add',
           path: 'src/controller/index.jsx',
-          templateFile: 'plop-templates/controller/index.jsx.hbs'
+          templateFile: './plop-templates/controller/index.jsx.hbs'
         }
       ]
     }
