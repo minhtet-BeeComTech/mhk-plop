@@ -9,9 +9,19 @@
 
 ## Setup for plop code generate
 
-- Create a plopfile.js file in the project root dir.
-- Add the following code to the plopfile.js file.
+1. Create a plopfile.js file in the project root dir.
+2. Add the following code to the plopfile.js file.
 
 ```
   module.exports = require('mhk-plop')
 ```
+
+3. Add the following code to the scripts tag of package.json
+
+```
+"generate": "plop"
+```
+
+## Usage
+
+- yarn generate
