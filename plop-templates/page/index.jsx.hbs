@@ -1,0 +1,9 @@
+import { renderRoutes } from 'react-router-config'
+
+/* PLOP_INJECT_PAGE_EXPORT */
+
+export default props => {
+  const { route } = props
+
+  return renderRoutes(route.routes, { someProp: 'these extra props are optional' })
+}

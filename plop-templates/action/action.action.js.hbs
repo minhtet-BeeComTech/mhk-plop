@@ -1,0 +1,84 @@
+import serviceController from '../controller'
+import routes from '../controller/constant/Routes'
+import { ToDoRequest, ToDoSuccess, ToDoError } from './typehandle.action'
+
+export const actionTypes = {
+// {{camelCase getActionName}}
+{{upperCase getActionName}}_REQUEST: '{{upperCase getActionName}}_REQUEST',
+{{upperCase getActionName}}_ERROR: '{{upperCase getActionName}}_ERROR',
+{{upperCase getActionName}}_SUCCESS: '{{upperCase getActionName}}_SUCCESS',
+
+// {{camelCase createActionName}}
+{{upperCase createActionName}}_REQUEST: '{{upperCase createActionName}}_REQUEST',
+{{upperCase createActionName}}_ERROR: '{{upperCase createActionName}}_ERROR',
+{{upperCase createActionName}}_SUCCESS: '{{upperCase createActionName}}_SUCCESS',
+
+// {{camelCase updateActionName}}
+{{upperCase updateActionName}}_REQUEST: '{{upperCase updateActionName}}_REQUEST',
+{{upperCase updateActionName}}_ERROR: '{{upperCase updateActionName}}_ERROR',
+{{upperCase updateActionName}}_SUCCESS: '{{upperCase updateActionName}}_SUCCESS',
+
+// {{camelCase deleteActionName}}
+{{upperCase deleteActionName}}_REQUEST: '{{upperCase deleteActionName}}_REQUEST',
+{{upperCase deleteActionName}}_ERROR: '{{upperCase deleteActionName}}_ERROR',
+{{upperCase deleteActionName}}_SUCCESS: '{{upperCase deleteActionName}}_SUCCESS'
+}
+
+const {{camelCase getActionName}} = () => async dispatch => {
+dispatch(ToDoRequest(actionTypes.{{upperCase getActionName}}_REQUEST))
+return await serviceController(routes.{{camelCase getActionName}})
+.then(res => {
+if (res.data.data.error) {
+console.log(res.data.data.message)
+} else {
+dispatch(ToDoSuccess(actionTypes.{{upperCase getActionName}}_SUCCESS, res.data))
+}
+})
+.catch(error => dispatch(ToDoError(actionTypes.{{upperCase getActionName}}_ERROR, error.message)))
+}
+
+const {{camelCase createActionName}} = data => async dispatch => {
+dispatch(ToDoRequest(actionTypes.{{upperCase createActionName}}_REQUEST))
+return await serviceController(routes.{{camelCase createActionName}}, data)
+.then(res => {
+if (res.data.data.error) {
+console.log(res.data.data.message)
+} else {
+dispatch(ToDoSuccess(actionTypes.{{upperCase createActionName}}_SUCCESS, res.data))
+}
+})
+.catch(error => dispatch(ToDoError(actionTypes.{{upperCase createActionName}}_ERROR, error.message)))
+}
+
+const {{camelCase updateActionName}} = data => async dispatch => {
+dispatch(ToDoRequest(actionTypes.{{upperCase updateActionName}}_REQUEST))
+return await serviceController(routes.{{camelCase updateActionName}}, data)
+.then(res => {
+if (res.data.data.error) {
+console.log(res.data.data.message)
+} else {
+dispatch(ToDoSuccess(actionTypes.{{upperCase updateActionName}}_SUCCESS, res.data))
+}
+})
+.catch(error => dispatch(ToDoError(actionTypes.{{upperCase updateActionName}}_ERROR, error.message)))
+}
+
+const {{camelCase deleteActionName}} = data => async dispatch => {
+dispatch(ToDoRequest(actionTypes.{{upperCase deleteActionName}}_REQUEST))
+return await serviceController(routes.{{camelCase deleteActionName}}, {data})
+.then(res => {
+if (res.data.data.error) {
+console.log(res.data.data.message)
+} else {
+dispatch(ToDoSuccess(actionTypes.{{upperCase deleteActionName}}_SUCCESS, res.data))
+}
+})
+.catch(error => dispatch(ToDoError(actionTypes.{{upperCase deleteActionName}}_ERROR, error.message)))
+}
+
+export default {
+{{camelCase getActionName}},
+{{camelCase createActionName}},
+{{camelCase updateActionName}},
+{{camelCase deleteActionName}}
+}

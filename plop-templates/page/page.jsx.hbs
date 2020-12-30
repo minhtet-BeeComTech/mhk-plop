@@ -1,0 +1,39 @@
+import React, { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+
+import {  } from '@component'
+import {  } from '@action'
+import { getUiText } from '@utlity'
+import { langKey } from '@data'
+import './style.scss'
+
+const {
+
+} = langKey
+
+const breadcrum_data = [
+	{
+		key: ''
+	}
+]
+
+export const {{properCase fileName}} = props => {
+	const { translation_data, langStore } = useSelector(state => state.translation)
+	const dispatch = useDispatch()
+
+	const langCode = langStore?.code
+
+	useEffect(() => {
+		dispatch()
+	}, [dispatch, langCode])
+
+	return (
+		<section className='{{dashCase fileName}}-section'>
+			<div className='container'>
+				<div className='row'>
+					{{properCase fileName}}
+        </div>
+			</div>
+		</section>
+	)
+}

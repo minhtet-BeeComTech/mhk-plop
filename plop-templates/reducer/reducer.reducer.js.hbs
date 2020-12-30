@@ -1,0 +1,85 @@
+import { actionTypes } from '../actions/{{lowerCase actionFileName}}.action'
+
+const initialState = {
+  error: null,
+  isLoading: false,
+  {{camelCase getActionName}}_data: null,
+  {{camelCase createActionName}}_data: null,
+  {{camelCase updateActionName}}_data: null,
+  {{camelCase deleteActionName}}_data: null
+}
+
+export default (state = initialState, action) => {
+  switch (action.type) {
+    case actionTypes.{{upperCase getActionName}}_REQUEST: // {{camelCase getActionName}}
+      return {
+        ...state,
+        isLoading: true
+      }
+    case actionTypes.{{upperCase getActionName}}_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        {{camelCase getActionName}}_data: action.data
+      }
+    case actionTypes.{{upperCase getActionName}}_ERROR:
+      return {
+        ...state,
+        isLoading: false,
+        error: action.error
+      }
+    case actionTypes.{{upperCase createActionName}}_REQUEST: // {{camelCase createActionName}}
+      return {
+        ...state,
+        isLoading: true
+      }
+    case actionTypes.{{upperCase createActionName}}_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        {{camelCase createActionName}}_data: action.data
+      }
+    case actionTypes.{{upperCase createActionName}}_ERROR:
+      return {
+        ...state,
+        isLoading: false,
+        error: action.error
+      }
+    case actionTypes.{{upperCase updateActionName}}_REQUEST: // {{camelCase updateActionName}}
+      return {
+        ...state,
+        isLoading: true
+      }
+    case actionTypes.{{upperCase updateActionName}}_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        {{camelCase updateActionName}}_data: action.data
+      }
+    case actionTypes.{{upperCase updateActionName}}_ERROR:
+      return {
+        ...state,
+        isLoading: false,
+        error: action.error
+      }
+    case actionTypes.{{upperCase deleteActionName}}_REQUEST: // {{camelCase deleteActionName}}
+      return {
+        ...state,
+        isLoading: true
+      }
+    case actionTypes.{{upperCase deleteActionName}}_SUCCESS:
+      return {
+        ...state,
+        isLoading: false,
+        {{camelCase deleteActionName}}_data: action.data
+      }
+    case actionTypes.{{upperCase deleteActionName}}_ERROR:
+      return {
+        ...state,
+        isLoading: false,
+        error: action.error
+      }
+    default:
+      return state
+  }
+}

@@ -1,0 +1,19 @@
+import { AppLayout } from '@layout'
+import PrivateRoute from './private'
+
+// page
+/* PLOP_INJECT_MAIN_ROUTER_IMPORT */
+
+import { NotFound } from '@page/result'
+
+export default [
+	{
+		component: AppLayout,
+		routes: [
+		/* PLOP_INJECT_MAIN_ROUTER_EXPORT */
+			{
+				component: NotFound
+			}
+		]
+	}
+]
