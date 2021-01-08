@@ -24,6 +24,6 @@
 
 ## Usage
 
-```
+```js
 yarn generate
 ```
